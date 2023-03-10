@@ -1,0 +1,16 @@
+requests
+opencv_contrib_python
+scipy
+keras
+pandas
+torch
+Flask
+tensorflow
+imutils
+numpy
+gradio
+Pillow
+filterpy
+sktime
+sympy
+scikit-image
