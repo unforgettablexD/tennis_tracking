@@ -3,8 +3,6 @@
 <h3>How to run</h3>
 
 <p>This project requires compatible <b>GPU</b> to install tensorflow, you can run it on your local machine in case you have one or use <a href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwissLL5-MvxAhXwlYsKHbkBDEUQFnoECAMQAw&url=https%3A%2F%2Fcolab.research.google.com%2Fnotebooks%2F&usg=AOvVaw0eDNVclINNdlOuD-YTYiiB'>Google Colaboratory</a> with <b>Runtime Type</b> changed to <b>GPU</b>.</p>
-
-- [ ] Input videos have to be rallies of the game and shouldn't contain any <strong>commercials, breaks or spectators</strong>.
   
 <ol>
   <li>
@@ -80,17 +78,17 @@
   
 `--minimap=0`            |  `--minimap=1`
 :-------------------------:|:-------------------------:
-![input_img1](https://github.com/unforgettablexD/tennis_tracking/blob/4b5ff2849b71af67023c4160c4f91481a6821bb3/VideoOutput/input6.gif)  |  ![output_img1](https://github.com/unforgettablexD/tennis_tracking/blob/3124a8609b30deb557c1563c45febb1fd86c8956/VideoOutput/input3.gif)
+![input_img1](https://github.com/unforgettablexD/tennis_tracking/blob/main/VideoOutput/input6.gif)  |  ![output_img1](https://github.com/unforgettablexD/tennis_tracking/blob/main/VideoOutput/input3.gif)
 
 <p>
-  To predict bounce points machine learning library for time series <a href="https://www.sktime.org/en/stable/index.html">sktime</a> was used. Specifically, <a href="https://github.com/unforgettablexD/tennis_tracking/blob/90652b4547311423ea49c4195dde9da9a81f1893/clf.pkl">TimeSeriesForestClassifier</a> was trained on 3 variables:  <code>x</code>, <code>y</code> coordinates of the ball and <code>V</code> for velocity (<code>V2-V1/t2-t1</code>). Data for training the model - <a href="https://github.com/unforgettablexD/tennis_tracking/blob/main/bigDF.csv" >df.csv</a>
+  To predict bounce points machine learning library for time series <a href="https://www.sktime.org/en/stable/index.html">sktime</a> was used. Specifically, <a href="https://github.com/unforgettablexD/tennis_tracking/blob/clf.pkl">TimeSeriesForestClassifier</a> was trained on 3 variables:  <code>x</code>, <code>y</code> coordinates of the ball and <code>V</code> for velocity (<code>V2-V1/t2-t1</code>). Data for training the model - <a href="https://github.com/unforgettablexD/tennis_tracking/blob/main/bigDF.csv" >df.csv</a>
 <p>
 <ul>
   <li>By specifiying <code>--bounce=1</code> bounce points can be detected and displayed</li>
 </ul>
 <p align="center">
   <kbd>
-  <img width=500 src="https://github.com/unforgettablexD/tennis_tracking/blob/a6f395716dc5a076bfb2fc49f97db96a2004efed/VideoOutput/9bounces.gif">
+  <img width=500 src="https://github.com/unforgettablexD/tennis_tracking/blob/main/VideoOutput/9bounces.gif">
   </kbd>
 </p>
 
